@@ -6,7 +6,8 @@ using DatingAppApi.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace DatingAppApi.Controllers {
+namespace DatingAppApi.Controllers 
+{
     [Route ("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase 

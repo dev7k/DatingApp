@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { registerContentQuery } from '@angular/core/src/render3/instructions';
 
 @Injectable({
   providedIn: 'root'
@@ -20,4 +21,9 @@ export class AuthService {
       })
     );
   }
+
+  register(model: any) {
+    return this.http.post(this.baseUrl + 'register', model);
+  }
+
 }
